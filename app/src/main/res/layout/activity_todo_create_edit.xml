@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              tools:context=".todos.write.TodoCreateEditActivity">
+
+    <TextView
+            android:id="@+id/txtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+            android:id="@+id/eTxtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@id/txtId"/>
+
+
+    <EditText
+            android:id="@+id/eTxtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="number|phone"
+            app:layout_constraintTop_toBottomOf="@id/txtNome"/>
+    <EditText
+        android:id="@+id/eTxtTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/eTxtTelefone"/>
+
+    <Button
+        android:id="@+id/btnSaveTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/design_default_color_error"
+        android:onClick="saveTodo"
+        android:paddingHorizontal="20dp"
+        android:text="Salvar" />
+
+</LinearLayout>

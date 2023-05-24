@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="opcoes_array">
+        <item>Casa</item>
+        <item>Celular</item>
+        <item>Trabalho</item>
+    </string-array>
+</resources>
