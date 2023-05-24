@@ -23,21 +23,20 @@
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="@id/txtId"/>
 
-
-    <EditText
-            android:id="@+id/eTxtTelefone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Telefone"
-            android:inputType="number|phone"
-            app:layout_constraintTop_toBottomOf="@id/txtNome"/>
-    <EditText
-        android:id="@+id/eTxtTipo"
+    <LinearLayout
+        android:id="@+id/containerTelefones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tipo"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/eTxtTelefone"/>
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/eTxtNome">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botaoAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Telefone"
+        app:layout_constraintTop_toBottomOf="@id/containerTelefones" />
 
     <Button
         android:id="@+id/btnSaveTodo"

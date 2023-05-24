@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string-array name="opcoes_array">
+
+    <string-array name="opcoes_tipo_telefone">
         <item>Casa</item>
         <item>Celular</item>
         <item>Trabalho</item>

@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity(), TodoRecyclerAdapter.TodoRowEventListen
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         recyclerView = findViewById<RecyclerView>(R.id.rvTodos)
 
         todos = todoRepository.getAll()
@@ -33,7 +32,6 @@ class MainActivity : AppCompatActivity(), TodoRecyclerAdapter.TodoRowEventListen
         todoRecyclerAdapter!!.setItems(todos)
         recyclerView!!.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         recyclerView!!.adapter = todoRecyclerAdapter
-
     }
 
     fun createTodo(view: View) {
